@@ -1,0 +1,149 @@
+<schema format="0.99.6.3-2" date="2024-03-01" time="16:11:33">
+	<metadata changingRange="datetime" encapsulation="dbo" identity="int" metadataPrefix="Metadata" metadataType="int" metadataUsage="true" changingSuffix="ChangedAt" identitySuffix="ID" positIdentity="int" positGenerator="true" positingRange="datetime" positingSuffix="PositedAt" positorRange="tinyint" positorSuffix="Positor" reliabilityRange="decimal(5,2)" reliabilitySuffix="Reliability" deleteReliability="0" assertionSuffix="Assertion" partitioning="false" entityIntegrity="true" restatability="true" idempotency="false" assertiveness="true" naming="improved" positSuffix="Posit" annexSuffix="Annex" chronon="datetime2(7)" now="sysdatetime()" dummySuffix="Dummy" versionSuffix="Version" statementTypeSuffix="StatementType" checksumSuffix="Checksum" businessViews="false" decisiveness="true" equivalence="false" equivalentSuffix="EQ" equivalentRange="tinyint" databaseTarget="SQLServer" temporalization="uni" deletability="false" deletablePrefix="Deletable" deletionSuffix="Deleted" privacy="Ignore" checksum="false" triggers="true"/>
+	<anchor mnemonic="?69" descriptor="Supplier" identity="int">
+		<metadata capsule="dbo" generator="true"/>
+		<attribute mnemonic="?70" descriptor="ContactName" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="731.99" y="417.00" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?72" descriptor="Address" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="808.30" y="556.72" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?74" descriptor="City" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="736.29" y="530.92" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?76" descriptor="Region" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="718.02" y="466.44" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?78" descriptor="PostalCode" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="840.54" y="358.97" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?80" descriptor="Country" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="904.61" y="448.95" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?82" descriptor="Phone" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="880.30" y="398.73" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?84" descriptor="CompanyName" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="773.91" y="380.46" fixed="false"/>
+		</attribute>
+		<layout x="840.24" y="473.17" fixed="false"/>
+	</anchor>
+	<tie>
+		<anchorRole role="?87" type="?69" identifier="true"/>
+		<anchorRole role="?89" type="?88" identifier="true"/>
+		<metadata capsule="dbo" deletable="false"/>
+		<layout x="974.88" y="578.21" fixed="false"/>
+	</tie>
+	<anchor mnemonic="?88" descriptor="Supplier_Product" identity="int">
+		<metadata capsule="dbo" generator="true"/>
+		<layout x="1100.62" y="574.99" fixed="false"/>
+	</anchor>
+	<tie>
+		<anchorRole role="?91" type="?88" identifier="true"/>
+		<anchorRole role="?93" type="?92" identifier="true"/>
+		<metadata capsule="dbo" deletable="false"/>
+		<layout x="1207.01" y="507.28" fixed="false"/>
+	</tie>
+	<anchor mnemonic="?92" descriptor="Product" identity="int">
+		<metadata capsule="dbo" generator="true"/>
+		<attribute mnemonic="?94" descriptor="ProductName" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1460.64" y="544.89" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?96" descriptor="QuantityPerUnit" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1427.33" y="594.33" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?98" descriptor="UnitPrice" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1374.67" y="622.27" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?100" descriptor="Discontinued" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1456.34" y="495.46" fixed="false"/>
+		</attribute>
+		<layout x="1369.29" y="536.30" fixed="false"/>
+	</anchor>
+	<tie>
+		<anchorRole role="?103" type="?92" identifier="true"/>
+		<anchorRole role="?105" type="?104" identifier="true"/>
+		<metadata capsule="dbo" deletable="false"/>
+		<layout x="1369.29" y="415.93" fixed="false"/>
+	</tie>
+	<anchor mnemonic="?104" descriptor="Product_Order" identity="int">
+		<metadata capsule="dbo" generator="true"/>
+		<layout x="1362.85" y="272.99" fixed="false"/>
+	</anchor>
+	<tie>
+		<anchorRole role="?107" type="?104" identifier="true"/>
+		<anchorRole role="?109" type="?108" identifier="true"/>
+		<metadata capsule="dbo" deletable="false"/>
+		<layout x="1230.66" y="226.78" fixed="false"/>
+	</tie>
+	<anchor mnemonic="?108" descriptor="Order" identity="int">
+		<metadata capsule="dbo" generator="true"/>
+		<attribute mnemonic="?114" descriptor="ShipAddress" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1209.46" y="43.78" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?116" descriptor="ShipRegion" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1061.50" y="150.40" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?118" descriptor="ShipPostalCode" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1144.21" y="10.31" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?120" descriptor="ShipCountry" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1218.65" y="103.92" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?122" descriptor="ShipCity" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1095.91" y="39.97" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?124" descriptor="OrderDate" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1101.63" y="195.34" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?126" descriptor="RequiredDate" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1147.90" y="222.05" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?128" descriptor="Freight" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1056.74" y="82.80" fixed="false"/>
+		</attribute>
+		<layout x="1151.21" y="119.44" fixed="false"/>
+	</anchor>
+	<tie>
+		<anchorRole role="?111" type="?104" identifier="true"/>
+		<anchorRole role="?113" type="?112" identifier="true"/>
+		<metadata capsule="dbo" deletable="false"/>
+		<layout x="1468.17" y="207.44" fixed="false"/>
+	</tie>
+	<anchor mnemonic="?112" descriptor="OrderDetails" identity="int">
+		<metadata capsule="dbo" generator="true"/>
+		<attribute mnemonic="?130" descriptor="Quantity" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1625.07" y="236.45" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?132" descriptor="Discount" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1653.02" y="288.04" fixed="false"/>
+		</attribute>
+		<attribute mnemonic="?134" descriptor="UnitPrice" dataRange="">
+			<metadata privacy="Ignore" capsule="dbo" deletable="false"/>
+			<layout x="1596.06" y="325.65" fixed="false"/>
+		</attribute>
+		<layout x="1579.94" y="263.32" fixed="false"/>
+	</anchor>
+</schema>

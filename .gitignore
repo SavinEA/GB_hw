@@ -4,3 +4,11 @@
 /data_mining/hw_6_Scrapy/venv/
 /data_mining/hw_6_Scrapy/.idea/
 /ETL/cw/
+/ETL/hw_5/orders.csv
+/ETL/hw_5/region.csv
+/ETL/hw_5/customer.csv
+/ETL/hw_5/lineitem.csv
+/ETL/hw_5/partsupp.csv
+/ETL/hw_5/nation.csv
+/ETL/hw_5/supplier.csv
+/ETL/hw_5/part.csv
