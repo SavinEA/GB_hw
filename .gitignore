@@ -14,3 +14,7 @@
 /ETL/hw_5/part.csv
 /ETL/hw_6/airflow/
 
+/ETL/hw_8/dags/
+/ETL/hw_8/logs/
+/ETL/hw_8/plugins/
+/ETL/hw_8/docker-compose.yml
